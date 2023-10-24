@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+
+  potencia_tech:
+    container_name: potencia_tech_dev
+    image: potencia_tech_img
+    build: .
+    tty: true
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+
+    env_file:
+      - ./.env
