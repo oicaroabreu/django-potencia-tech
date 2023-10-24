@@ -1,5 +1,6 @@
 asgiref==3.7.2 ; python_full_version >= "3.8.2" and python_full_version < "4.0.0"
 backports-zoneinfo==0.2.1 ; python_full_version >= "3.8.2" and python_version < "3.9"
+brotli==1.1.0 ; python_full_version >= "3.8.2" and python_full_version < "4.0.0"
 dj-database-url==2.1.0 ; python_full_version >= "3.8.2" and python_full_version < "4.0.0"
 django==4.2.6 ; python_full_version >= "3.8.2" and python_full_version < "4.0.0"
 gunicorn==21.2.0 ; python_full_version >= "3.8.2" and python_full_version < "4.0.0"
@@ -9,3 +10,4 @@ python-decouple==3.8 ; python_full_version >= "3.8.2" and python_full_version < 
 sqlparse==0.4.4 ; python_full_version >= "3.8.2" and python_full_version < "4.0.0"
 typing-extensions==4.8.0 ; python_full_version >= "3.8.2" and python_full_version < "4.0.0"
 tzdata==2023.3 ; python_full_version >= "3.8.2" and python_full_version < "4.0.0" and sys_platform == "win32"
+whitenoise[brotli]==6.6.0 ; python_full_version >= "3.8.2" and python_full_version < "4.0.0"
