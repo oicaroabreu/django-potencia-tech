@@ -40,7 +40,7 @@ stop:
 	docker-compose -f docker-compose-dev.yaml stop 
 
 test:
-	docker exec -ti potencia_tech_dev pytest -v
+	docker exec -ti potencia_tech_dev python -m pytest . --cov-report term --cov=. --cov-fail-under=80
 
 isort:
 	@echo "############################### Running isort ###################################\n"
