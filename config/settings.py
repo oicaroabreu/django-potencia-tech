@@ -86,7 +86,6 @@ DATABASES = {
     "default": dj_database_url.config(default=config("DATABASE_URL"), conn_max_age=600)
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -134,7 +133,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Django Rest Framework
 REST_FRAMEWORK = {
     "DEFAULT_VERSIONING_CLASS": "rest_framework.versioning.URLPathVersioning",
-    'DEFAULT_AUTHENTICATION_CLASSES': [],
+    "DEFAULT_AUTHENTICATION_CLASSES": [],
 }
 
 # drf_yasg settings

@@ -35,7 +35,7 @@ stop:
 	docker-compose -f docker-compose-dev.yaml stop 
 
 test:
-	docker exec -ti potencia_tech_dev python manage.py test 
+	docker exec -ti potencia_tech_dev pytest -v
 
 export_requirements:
 	poetry export --output requirements.txt --without-hashes
