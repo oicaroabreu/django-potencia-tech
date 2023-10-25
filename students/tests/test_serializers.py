@@ -1,4 +1,5 @@
 import pytest
+
 from ..models import Student
 from ..serializers import StudentSerializer
 

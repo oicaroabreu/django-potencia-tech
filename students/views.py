@@ -1,6 +1,5 @@
 from rest_framework import generics
-from drf_yasg.utils import swagger_auto_schema
-from drf_yasg import openapi
+
 from .models import Student
 from .serializers import StudentSerializer
 
