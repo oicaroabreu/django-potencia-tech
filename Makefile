@@ -29,7 +29,7 @@ createsuperuser:
 
 start:
 	docker-compose -f docker-compose-dev.yaml start
-	docker exec -ti potencia_tech_dev python manage.py runserver_plus 0.0.0.0:8000
+	docker exec -ti potencia_tech_dev python manage.py runserver 0.0.0.0:8000
 
 stop:
 	docker-compose -f docker-compose-dev.yaml stop 

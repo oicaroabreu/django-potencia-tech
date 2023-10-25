@@ -6,13 +6,13 @@ from .models import Student
 class StudentAdmin(admin.ModelAdmin):
     list_display = (
         "id",
-        "name",
-        "age",
-        "first_semester_grade",
-        "second_semester_grade",
-        "professor_name",
-        "room_number",
+        "nome",
+        "idade",
+        "nota_do_primeiro_semestre",
+        "nota_do_segundo_semestre",
+        "nome_do_professor",
+        "numero_da_sala",
     )
-    list_filter = ("age", "professor_name", "room_number")
-    search_fields = ("name", "professor_name", "room_number")
+    list_filter = ("idade", "nome_do_professor", "numero_da_sala")
+    search_fields = ("nome", "nome_do_professor", "numero_da_sala")
     list_per_page = 25
