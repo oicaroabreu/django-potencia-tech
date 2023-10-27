@@ -5,7 +5,7 @@
 ![image](https://img.shields.io/badge/django%20rest-ff1709?style=for-the-badge&logo=django&logoColor=white)
 ![image](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor)
 ![image](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
-# Projeto de Exemplo
+# Projeto de API em Rest
 
 Este é um projeto de exemplo de uma API REST feito em Django, desenvolvido como parte do desafio proposto pela Generation Brasil e Potencia Tech.
 
@@ -90,7 +90,7 @@ Se preferir usar Docker, siga estas etapas:
 
 1. **Clone o Repositório**: Clone o repositório em sua máquina local.
 
-2. \*\*Certifique-se de que o Docker e o Docker Compose estejam instalados.
+2. Certifique-se de que o Docker e o Docker Compose estejam instalados.
 
 3. Execute o seguinte comando para construir o ambiente de desenvolvimento:
 
@@ -117,6 +117,8 @@ Se preferir usar Docker, siga estas etapas:
 - **Estilo de Código**: Seguimos um estilo de código consistente e claro, aderindo às diretrizes PEP 8 para Python. Utilizamos nomes de variáveis descritivos e optamos pelo uso de comentários significativos quando necessário.
 
 - **Integração Contínua**: Implementamos um pipeline de integração contínua usando o GitHub Actions. Isso nos permitiu automatizar testes, análise de código e implantação.
+
+- **Commits Semânticos**: Adotamos a prática de commits semânticos para manter um histórico de alterações legível e informativo.
 
 ## LICENÇAS DE UTILIZAÇÃO
 

@@ -10,8 +10,7 @@ env:
   SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
     container:
       image: python:3.8-slim-buster
@@ -54,9 +53,15 @@ jobs:
       run: |
         python -m safety check
 
+  deploy:
+    needs: test 
+
+    runs-on: ubuntu-latest
+
+    steps:
     - name: Render Deployment
       uses: sws2apps/render-deployment@v1.6.0
       with:
-          serviceId: ${{ secrets.RENDER_SERVICE_ID }}
-          apiKey: ${{ secrets.RENDER_API_KEY }}
-          multipleDeployment: false
+        serviceId: ${{ secrets.RENDER_SERVICE_ID }}
+        apiKey: ${{ secrets.RENDER_API_KEY }}
+        multipleDeployment: false

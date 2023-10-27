@@ -87,7 +87,9 @@ WSGI_APPLICATION = "config.wsgi.application"
 if config("DATABASE_URL", default=False):
     DATABASES = {
         "default": dj_database_url.config(
-            default=config("DATABASE_URL"), conn_max_age=600
+            default=config("DATABASE_URL"),
+            conn_max_age=600,
+            conn_health_checks=True,
         )
     }
 else:
@@ -120,9 +122,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "pt-br"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "America/Sao_Paulo"
 
 USE_I18N = True
 

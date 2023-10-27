@@ -8,9 +8,13 @@ schema_view = get_schema_view(
     openapi.Info(
         title="API de Estudantes",
         default_version="v1",
-        description="Exemplo de API em REST para o desafio da Generation Brasil e Potencia Tech",
-        contact=openapi.Contact(email="icaro.labreu@gmail.com"),
-        license=openapi.License(name="MIT LICENSE"),
+        description="""Exemplo de API em REST para o desafio da Generation Brasil e Potencia Tech
+                        \n\nConfira o código-fonte: [GitHub](https://github.com/oicaroabreu/django-potencia-tech)""",  # noqa
+        contact=openapi.Contact(name="Ícaro Abreu", email="icaro.labreu@gmail.com"),
+        license=openapi.License(
+            name="MIT LICENSE",
+            url="https://github.com/oicaroabreu/django-potencia-tech/blob/master/LICENSE",
+        ),
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
