@@ -5,7 +5,9 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 class Student(models.Model):
     id = models.AutoField(primary_key=True, verbose_name="ID")
     nome = models.CharField(max_length=100, verbose_name="Nome")
-    idade = models.IntegerField(verbose_name="Idade", validators=[MinValueValidator(0), MaxValueValidator(200)])
+    idade = models.IntegerField(
+        verbose_name="Idade", validators=[MinValueValidator(0), MaxValueValidator(200)]
+    )
     nota_do_primeiro_semestre = models.DecimalField(
         max_digits=5,
         decimal_places=2,
@@ -22,7 +24,8 @@ class Student(models.Model):
         max_length=100, verbose_name="Nome do professor"
     )
     numero_da_sala = models.IntegerField(
-        verbose_name="Número da sala", validators=[MinValueValidator(0), MaxValueValidator(10000)]
+        verbose_name="Número da sala",
+        validators=[MinValueValidator(0), MaxValueValidator(10000)],
     )
 
     def __str__(self):
